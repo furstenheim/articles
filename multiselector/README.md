@@ -1,5 +1,5 @@
-## Multicursors in Intellij
-One of the best features of IDEs are multicursors. VsCode, Sublime and Intellij they all have it and if you learn to use them, you'll notice a boost in productivity. 
+# Multicursors in Intellij
+One of the best features of IDEs are multicursors. VsCode, Sublime and Intellij they all have it. If you learn to use them, you'll notice a boost in productivity. 
 
 
 Multicursors are great when you need to work with tabular data, for example arrays or data extracted from the database, when you need to write similar code like asserting in tests and many more.
@@ -17,7 +17,7 @@ For the mouse inclined 🙈 you can do it with Alt + Left Click, but there are m
 ![multicursor-example](./multiple-line.gif)
 
 ### Clone caret below
-My favourite way to create multicursors is cloning the caret below, since it is the most intuitive one. It will create another caret in the same position of the next line. Surprisingly it does not have a shortcut. In my case I have assigned Ctrl + Shift + Down.
+My favourite way to create multicursors is cloning the caret below, it is the most intuitive one. It will create another caret in the same position of the next line. Surprisingly it does not have a shortcut. In my case I have assigned Ctrl + Shift + Down.
 
 ![clone-caret-below](./basic-cursor.gif)
 
@@ -27,7 +27,7 @@ Add selection (Alt-J  ![Windows](./icons8-windows-xp-24.png) ![Linux](./icons8-l
 ![Add selection](./add-selection.gif)
 
 ### Create sequence
-[String manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation) is a cool plugin for intellij. It supports converting from CamelCase to snake_case, snake_case to kebab-case... And it supports "Create sequence", this is a super power with multicursors. It increases a sequence from the value selected in the first cursor. Very useful at tests, both for creating mock data and for asserting information in arrays without looping.
+[String manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation) is a cool plugin for intellij. It supports converting from CamelCase to snake_case, snake_case to kebab-case... And it supports "Create sequence", this is a super power with multicursors. It increases a sequence starting from the value selected in the first cursor. Very useful at tests, both for creating mock data and for asserting information in arrays without looping.
 
 ![sequence](./create-sequence.gif)
 
@@ -41,3 +41,6 @@ There are occasions where we want to get a cursor in each line. For example, we 
 
 ![split-into-lines](./multiple-line.gif)
 
+
+### Conclusion
+I hope that you see how easy is to work with multicursors in IntelliJ, and if you already knew about them you've learnt some new trick. If you know more things that can be done with multicursors, please add them in the comments.
