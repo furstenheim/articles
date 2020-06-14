@@ -132,9 +132,9 @@ It turns out that we actually can, albeit really little. As we can see in our cu
 Not only that, we are allocating memory and that affects a lot the benchmarks, it makes the benchmarks more unstable, and it requires time to free the space.
 
 ## Step 4. Microptimization
-Normally, one would have stopped in the previous step, since the gain is not worth the effort. But for the sake of the article, let's fight for an extra inch. There are two things that are specially slow in microoptimization: branches and division, and we can reduce both.
+Normally, one would have stopped in the previous step, since the gain is not worth the effort. For the sake of the article, let's fight for an extra inch. There are two things that are specially slow in microoptimization: branches and division, and we can reduce both.
 
-Currently, we are performing three divisions to obtain the reminders modulo 3, 5 and 15. However, the last one contains the information about the other two. Similarly, we are having 4 cases, but in fact, there are only two. Returning the original number or the changed string. With a bit of ugly code we get:
+Currently, we are performing three divisions to obtain the reminders modulo 3, 5 and 15. However, the last one contains the information about the other two. Similarly, we are checking 4 cases, but in fact, there are only two. Returning the original number or the changed string. With a bit of ugly code we get:
 
 ```go
 func FizzBuzz (input uint) string {
@@ -173,4 +173,4 @@ func TestFizzBuzz_DifferentialTesting(t *testing.T) {
 ### Bonus. Batch processing
 The standard question for FizzBuzz is to compute it for all numbers from 1 to 100. In that case we can even skip the division by 15.
 
-That's all. Thanks for reading I hope that you enjoyed it.
+That's all. Thanks for reading I hope that you enjoyed it. You can find the go code in my [github account](https://github.com/furstenheim/articles/tree/master/go-fizz-buzz).
